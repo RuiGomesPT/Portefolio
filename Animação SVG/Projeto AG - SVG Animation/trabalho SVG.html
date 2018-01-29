@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Trabalho de Animação Gráfica - SVG</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.1.1.min.js"></script>
+
+    <script src="trabalho.js"></script>
+</head>
+
+<body>
+    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="800px" height="400px" viewBox="-1.04116 -1.12594 582.082 402.252"
+        preserveAspectRatio="xMidYMid meet">
+        <rect id="svgEditorBackground" x="-1" y="-1" width="582" height="402" style="fill: none; stroke: none;"/>
+<!-- Creado com Method Draw - http://github.com/duopixel/Method-Draw/ -->
+<g>
+    <title>Trabalho de Animação Gráfica - SVG</title>
+    <rect fill="#fff" id="canvas_background" height="402" width="582" y="-1" x="-1" />
+    <g display="none" overflow="visible" y="0" x="0" height="100%" width="100%" id="canvasGrid">
+        <rect fill="url(#gridpattern)" stroke-width="0" y="0" x="0" height="100%" width="100%" />
+    </g>
+</g>
+<g>
+    <title>Trabalho de Animação Gráfica - SVG</title>
+
+
+    <!-- Texto ESMAD -->
+    <text font-style="normal" font-weight="normal" stroke="#000" transform="matrix(7.4980716134094765,0,0,7.5337814068611815,-1617.77192108134,-953.9443367097008) "
+        xml:space="preserve" text-anchor="start" font-family="'Courier New', Courier, monospace" font-size="24" id="esmad" y="159.502858"
+        x="218.439533" stroke-opacity="null" stroke-width="0" fill="black" >ESMAD</text>
+    <!-- ########### -->
+
+
+
+    <!-- Bolas coloridas: -->
+    <circle id="exter" cx="109" cy="195" r="2.83834" stroke-width="2" stroke="#000" fill="black">
+        <animate attributeName="fill" values="#e88018;#182ae8;#e88018" begin="0s" dur="1s" repeatCount="indefinite" />
+        <animate attributeName="r" values="15;0;15" begin="0s" dur="2s" repeatCount="indefinite" />
+    </circle>
+    <circle id="inter" cx="109" cy="195" r="7" stroke="#000" stroke-width="2" fill="white">
+        <animate attributeName="fill" values="#182ae8;#e88018;#182ae8" begin="0s" dur="1s" repeatCount="indefinite" />
+    </circle>
+
+
+    <!-- Bola Grande -->
+    <circle id="B1" cx="180" cy="222" r="18" stroke-width="2" stroke="#000" fill="black">
+        <animate attributeName="fill" values="#e88018;#182ae8;#e88018" begin="0s" dur="4s" repeatCount="indefinite">
+        </animate>
+    </circle>
+    <circle id="B2" cx="180" cy="222" r="9" stroke="#000" stroke-width="2" fill="white" />
+    <!-- ########### -->
+
+
+    <!-- Bolas Médias -->
+    <circle id="A1" onclick="changerect(evt)" cx="183" cy="169" r="14" stroke-width="2" stroke="#000" fill="black">
+<animate attributeName="fill" values="#e88018;#182ae8;#e88018" begin="0s" dur="4s" repeatCount="indefinite">
+</animate>
+</circle>
+<circle id="A2" cx="183" cy="169" r="7" stroke="#000" stroke-width="2" fill="white" />
+
+<circle id="F1" cx="514" cy="196" r="15" stroke-width="2" stroke="#000" fill="black">
+    <animate attributeName="fill" values="#e88018;#182ae8;#e88018" begin="0s" dur="4s" repeatCount="indefinite">
+    </animate>
+</circle>
+<circle id="F2" cx="514" cy="196" r="7" stroke="#000" stroke-width="2" fill="white" />
+<!-- ############ -->
+
+
+<!-- Bolas Pequenas -->
+<circle id="C1" cx="290" cy="243" r="12" stroke-width="2" stroke="#000" fill="black">
+    <animate attributeName="fill" values="#e88018;#182ae8;#e88018" begin="0s" dur="4s" repeatCount="indefinite">
+    </animate>
+</circle>
+<circle id="C2" cx="290" cy="243" r="6" stroke="#000" stroke-width="2" fill="white" />
+
+<circle id="D1" cx="398" cy="247" r="12" stroke-width="2" stroke="#000" fill="black">
+    <animate attributeName="fill" values="#e88018;#182ae8;#e88018" begin="0s" dur="4s" repeatCount="indefinite">
+    </animate>
+</circle>
+<circle id="D2" cx="398" cy="247" r="6" stroke="#000" stroke-width="2" fill="white" />
+
+
+<circle id="E1" cx="398" cy="188" r="12" stroke-width="2" stroke="#000" fill="black">
+    <animate attributeName="fill" values="#e88018;#182ae8;#e88018" begin="0s" dur="4s" repeatCount="indefinite">
+    </animate>
+</circle>
+<circle id="E2" cx="398" cy="188" r="6" stroke="#000" stroke-width="2" fill="white" />
+<!-- ############# -->
+
+<!-- ################# -->
+
+</g>
+
+
+
+
+<!-- Textos Animados: -->
+
+<path d="M183.1109366581358,159.42578994315602q112.56071964018088,-162.29693811693105,214.6506746626677,20.941529235392295"
+    stroke="none" id="arco" style="fill: none; stroke-width: 1px;"/>
+<text id="text1" font-family="arial" font-size="1.2em" fill="black">
+    <textPath xlink:href="#arco" startOffset="-120.485%">
+        Escola Superior de Media Artes e Design
+        <animate attributeName="startOffset" from="100%" to="-120%" dur="8s" begin="E1.click;E2.click" />
+    </textPath>
+</text>
+
+
+<path d="M395.29539047267144,255.2111283057148q-50.08433747267145,-220.0979306942852,-103.71792090993824,-3.9436472657573347"
+    stroke="none" id="arco2" style="fill: none; stroke-width: 1px;"/>
+<text id="text2" font-family="arial" font-size="1.2em" fill="black" transform="rotate(-180 345,250)">
+    <textPath xlink:href="#arco2" startOffset="-95.0637%">
+        Trabalho Realizado por:
+        <animate attributeName="startOffset" from="100%" to="-140%" dur="7s" begin="C2.click;C1.click" />
+    </textPath>
+</text>
+
+
+<path d="M288.4225325113753,234.7041487425968q15.774589063029282,-224.7878941481675,219.26678797610725,-48.11249664223939"
+    stroke="none" id="arco3" style="fill: none; stroke-width: 1px;"/>
+<text id="text3" font-family="arial" font-size="1.2em" fill="black">
+    <textPath xlink:href="#arco3" startOffset="-127.0637%">
+        Rui Gomes nº9150326 e Rui Gomes nº9140518
+        <animate attributeName="startOffset" from="100%" to="-80%" dur="10s" begin="F2.click;F1.click" />
+    </textPath>
+</text>
+
+
+
+<path d="M510.055508846937,210.2535356949014q-65.46454484693703,-201.1259923050986,-324.1678052452522,25.239342500846874"
+    stroke="none" id="arco4" style="fill: none; stroke-width: 1px;"/>
+<text id="text4" font-family="arial" font-size="1.2em" fill="black" transform="rotate(-180 340,220)">
+    <textPath transform="scale(-2,2)" xlink:href="#arco4" startOffset="178.0637%">
+        Licenciatura: Tecnologias e Sistemas de Informação para a Web
+        <animate attributeName="startOffset" from="99%" to="-200%" dur="20s" begin="B1.click;B2.click" />
+    </textPath>
+</text>
+
+<!-- ################ -->
+<text id="texto" x="118" y="56" font-family="arial" font-size="1.2em" fill="white">Trabalho realizado no âmbito da disciplina de Animação Gráfica.</text>
+
+
+
+
+
+
+
+
+
+
+
+</svg>
+</body>
+
+</html>

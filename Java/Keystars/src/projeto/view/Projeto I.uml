@@ -1,0 +1,266 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="20131001" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:UMLLabProfile="http:///schemas/UMLLabProfile/NS/0" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xsi:schemaLocation="http:///schemas/UMLLabProfile/NS/0 pathmap://UMLLAB_PROFILES/UMLLab.profile.uml#UMLLabProfile-Annotation_2-UMLLabProfile">
+  <uml:Model xmi:id="_MnneQCpPEee14-ResL-nvQ" name="Projeto_I">
+    <eAnnotations xmi:id="_N32XECpPEee14-ResL-nvQ" source="http://ns.yatta.de/umllab">
+      <contents xmi:type="ecore:EAnnotation" xmi:id="_N32XESpPEee14-ResL-nvQ" source="codegen">
+        <details xmi:id="_N32XEipPEee14-ResL-nvQ" key="codegenDirectory" value="/Projeto I/src"/>
+        <details xmi:id="_P02PQCpPEee14-ResL-nvQ" key="AssociatedSourceCode" value="/Projeto I/src/projeto/Pacote.java;3290970822/1;/Projeto I/src/projeto/Programa.java;1231970723/1;/Projeto I/src/projeto/Utilizador.java;195608372/1;/Projeto I/src/projeto/UtilizadorProg.java;505747232/1;/Projeto I/src/projeto/TipoUtilizador.java;3660907395/1;/Projeto I/src/projeto/Super.java;151696458/1;/Projeto I/src/projeto/GestaoUtilizador.java;3312171075/1;"/>
+      </contents>
+    </eAnnotations>
+    <elementImport xmi:id="_OmiCACpPEee14-ResL-nvQ">
+      <importedElement xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#boolean"/>
+    </elementImport>
+    <elementImport xmi:id="_OmiCASpPEee14-ResL-nvQ">
+      <importedElement xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#byte"/>
+    </elementImport>
+    <elementImport xmi:id="_OmipECpPEee14-ResL-nvQ">
+      <importedElement xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#char"/>
+    </elementImport>
+    <elementImport xmi:id="_OmipESpPEee14-ResL-nvQ">
+      <importedElement xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#double"/>
+    </elementImport>
+    <elementImport xmi:id="_OmipEipPEee14-ResL-nvQ">
+      <importedElement xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#float"/>
+    </elementImport>
+    <elementImport xmi:id="_OmipEypPEee14-ResL-nvQ">
+      <importedElement xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+    </elementImport>
+    <elementImport xmi:id="_Omj3MCpPEee14-ResL-nvQ">
+      <importedElement xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#long"/>
+    </elementImport>
+    <elementImport xmi:id="_Omj3MSpPEee14-ResL-nvQ">
+      <importedElement xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#short"/>
+    </elementImport>
+    <elementImport xmi:id="_OmnhkCpPEee14-ResL-nvQ">
+      <importedElement xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+    </elementImport>
+    <packagedElement xmi:type="uml:Package" xmi:id="_Omu2UCpPEee14-ResL-nvQ" name="java">
+      <packagedElement xmi:type="uml:Package" xmi:id="_OmvdYCpPEee14-ResL-nvQ" name="util">
+        <packagedElement xmi:type="uml:Class" xmi:id="_Ou-MUCpPEee14-ResL-nvQ" name="ArrayList"/>
+        <packagedElement xmi:type="uml:Interface" xmi:id="_OvQgMCpPEee14-ResL-nvQ" name="List"/>
+        <packagedElement xmi:type="uml:DataType" xmi:id="_OvnFgCpPEee14-ResL-nvQ" name="Date"/>
+        <packagedElement xmi:type="uml:Class" xmi:id="_AVThoypbEee14-ResL-nvQ" name="Scanner"/>
+      </packagedElement>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Package" xmi:id="_OnPzsCpPEee14-ResL-nvQ" name="projeto">
+      <packagedElement xmi:type="uml:Class" xmi:id="_Ooz58CpPEee14-ResL-nvQ" name="Pacote">
+        <generalization xmi:id="_0ULywCpSEee14-ResL-nvQ" general="_y6KEwCpSEee14-ResL-nvQ"/>
+        <ownedAttribute xmi:id="_OwM7YCpPEee14-ResL-nvQ" name="id_pacote" visibility="public">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:id="_OwOJgCpPEee14-ResL-nvQ" name="nome">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:id="_OwVeQCpPEee14-ResL-nvQ" name="preco">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#double"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:id="_OwWsYCpPEee14-ResL-nvQ" name="programa" type="_OpLGUCpPEee14-ResL-nvQ" isOrdered="true" association="_OwyKMCpPEee14-ResL-nvQ">
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_OwWsYSpPEee14-ResL-nvQ" value="*"/>
+          <defaultValue xmi:type="uml:LiteralString" xmi:id="_OwXTcCpPEee14-ResL-nvQ" value="new ArrayList &lt;Programa>()"/>
+        </ownedAttribute>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Class" xmi:id="_OpLGUCpPEee14-ResL-nvQ" name="Programa">
+        <generalization xmi:id="_3bQRYCpSEee14-ResL-nvQ" general="_y6KEwCpSEee14-ResL-nvQ"/>
+        <ownedAttribute xmi:id="_OwhrgCpPEee14-ResL-nvQ" name="id_programa" visibility="public">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:id="_OwiSkCpPEee14-ResL-nvQ" name="nome">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:id="_Owi5oCpPEee14-ResL-nvQ" name="tipo">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:id="_Owku0CpPEee14-ResL-nvQ" name="preco">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+        </ownedAttribute>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Class" xmi:id="_Opjg0CpPEee14-ResL-nvQ" name="Utilizador">
+        <ownedAttribute xmi:id="_OwlV4CpPEee14-ResL-nvQ" name="id">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:id="_Owl88CpPEee14-ResL-nvQ" name="password">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:id="_Owl88SpPEee14-ResL-nvQ" name="nome">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:id="_OwmkACpPEee14-ResL-nvQ" name="email">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:id="_OwnLECpPEee14-ResL-nvQ" name="programa" type="_Op8iYCpPEee14-ResL-nvQ" isOrdered="true" association="_OxZOMCpPEee14-ResL-nvQ">
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_OwnLESpPEee14-ResL-nvQ" value="*"/>
+          <defaultValue xmi:type="uml:LiteralString" xmi:id="_OwnLEipPEee14-ResL-nvQ" value="new ArrayList &lt;UtilizadorProg>()"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:id="_OwnyICpPEee14-ResL-nvQ" name="consumo">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#double"/>
+        </ownedAttribute>
+        <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_10QPoCpYEee14-ResL-nvQ" name="Utilizador" specification="_10MlQCpYEee14-ResL-nvQ">
+          <ownedParameter xmi:id="_10QPoSpYEee14-ResL-nvQ" name="id">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+          </ownedParameter>
+          <ownedParameter xmi:id="_10QPoipYEee14-ResL-nvQ" name="password">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+          </ownedParameter>
+          <ownedParameter xmi:id="_10QPoypYEee14-ResL-nvQ" name="nome">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+          </ownedParameter>
+          <ownedParameter xmi:id="_10QPpCpYEee14-ResL-nvQ" name="email">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+          </ownedParameter>
+          <ownedParameter xmi:id="_10QPpSpYEee14-ResL-nvQ" name="programa" type="_OvQgMCpPEee14-ResL-nvQ"/>
+          <ownedParameter xmi:id="_10QPpipYEee14-ResL-nvQ" name="consumo">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#double"/>
+          </ownedParameter>
+          <ownedParameter xmi:id="_10QPpypYEee14-ResL-nvQ" type="_Opjg0CpPEee14-ResL-nvQ" direction="return"/>
+          <language>java</language>
+          <body>super();&#xD;
+		this.id = id;&#xD;
+		this.password = password;&#xD;
+		this.nome = nome;&#xD;
+		this.email = email;&#xD;
+		this.programa = programa;&#xD;
+		this.consumo = consumo;&#xD;
+	</body>
+        </ownedBehavior>
+        <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_10QPqCpYEee14-ResL-nvQ" name="Utilizador" specification="_10GeoCpYEee14-ResL-nvQ">
+          <ownedParameter xmi:id="_10QPqSpYEee14-ResL-nvQ" type="_Opjg0CpPEee14-ResL-nvQ" direction="return"/>
+          <language>java</language>
+          <body>super();&#xD;
+		// TODO Auto-generated constructor stub&#xD;
+	</body>
+        </ownedBehavior>
+        <ownedOperation xmi:id="_10GeoCpYEee14-ResL-nvQ" name="Utilizador" method="_10QPqCpYEee14-ResL-nvQ">
+          <eAnnotations xmi:id="_10GeoipYEee14-ResL-nvQ" source="http://www.eclipse.org/uml2/2.0.0/UML">
+            <details xmi:id="_10HFsCpYEee14-ResL-nvQ" key="create"/>
+          </eAnnotations>
+          <ownedParameter xmi:id="_10GeoSpYEee14-ResL-nvQ" type="_Opjg0CpPEee14-ResL-nvQ" direction="return"/>
+        </ownedOperation>
+        <ownedOperation xmi:id="_10MlQCpYEee14-ResL-nvQ" name="Utilizador" method="_10QPoCpYEee14-ResL-nvQ">
+          <eAnnotations xmi:id="_10NMVSpYEee14-ResL-nvQ" source="http://www.eclipse.org/uml2/2.0.0/UML">
+            <details xmi:id="_10NMVipYEee14-ResL-nvQ" key="create"/>
+          </eAnnotations>
+          <ownedParameter xmi:id="_10MlQSpYEee14-ResL-nvQ" name="id">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+          </ownedParameter>
+          <ownedParameter xmi:id="_10MlQipYEee14-ResL-nvQ" name="password">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+          </ownedParameter>
+          <ownedParameter xmi:id="_10NMUCpYEee14-ResL-nvQ" name="nome">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+          </ownedParameter>
+          <ownedParameter xmi:id="_10NMUSpYEee14-ResL-nvQ" name="email">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+          </ownedParameter>
+          <ownedParameter xmi:id="_10NMUipYEee14-ResL-nvQ" name="programa" type="_OvQgMCpPEee14-ResL-nvQ"/>
+          <ownedParameter xmi:id="_10NMUypYEee14-ResL-nvQ" name="consumo">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#double"/>
+          </ownedParameter>
+          <ownedParameter xmi:id="_10NMVCpYEee14-ResL-nvQ" type="_Opjg0CpPEee14-ResL-nvQ" direction="return"/>
+        </ownedOperation>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Class" xmi:id="_Op8iYCpPEee14-ResL-nvQ" name="UtilizadorProg">
+        <ownedAttribute xmi:id="_OwoZMCpPEee14-ResL-nvQ" name="id_programa" type="_y6KEwCpSEee14-ResL-nvQ" association="_C1jxgCpTEee14-ResL-nvQ"/>
+        <ownedAttribute xmi:id="_OwpAQCpPEee14-ResL-nvQ" name="data_compra" visibility="public" type="_OvnFgCpPEee14-ResL-nvQ" association="_X4hKwCpPEee14-ResL-nvQ"/>
+        <ownedAttribute xmi:id="_OwpnUCpPEee14-ResL-nvQ" name="data_expiracao" visibility="public" type="_OvnFgCpPEee14-ResL-nvQ" association="_X4hx0SpPEee14-ResL-nvQ"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Association" xmi:id="_OwyKMCpPEee14-ResL-nvQ" name="" memberEnd="_OwyxQCpPEee14-ResL-nvQ _OwWsYCpPEee14-ResL-nvQ">
+        <ownedEnd xmi:id="_OwyxQCpPEee14-ResL-nvQ" name="" type="_Ooz58CpPEee14-ResL-nvQ" association="_OwyKMCpPEee14-ResL-nvQ"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Association" xmi:id="_OxZOMCpPEee14-ResL-nvQ" name="" memberEnd="_OxZOMSpPEee14-ResL-nvQ _OwnLECpPEee14-ResL-nvQ">
+        <ownedEnd xmi:id="_OxZOMSpPEee14-ResL-nvQ" name="" type="_Opjg0CpPEee14-ResL-nvQ" association="_OxZOMCpPEee14-ResL-nvQ"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Association" xmi:id="_X4hKwCpPEee14-ResL-nvQ" name="" memberEnd="_OwpAQCpPEee14-ResL-nvQ _X4hx0CpPEee14-ResL-nvQ">
+        <ownedEnd xmi:id="_X4hx0CpPEee14-ResL-nvQ" name="" type="_Op8iYCpPEee14-ResL-nvQ" association="_X4hKwCpPEee14-ResL-nvQ"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Association" xmi:id="_X4hx0SpPEee14-ResL-nvQ" name="" memberEnd="_OwpnUCpPEee14-ResL-nvQ _X4i_8CpPEee14-ResL-nvQ">
+        <ownedEnd xmi:id="_X4i_8CpPEee14-ResL-nvQ" name="" type="_Op8iYCpPEee14-ResL-nvQ" association="_X4hx0SpPEee14-ResL-nvQ"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Class" xmi:id="_y6KEwCpSEee14-ResL-nvQ" name="Super">
+        <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_1H_1UCpSEee14-ResL-nvQ" name="Super" specification="_1Hs6YCpSEee14-ResL-nvQ">
+          <ownedParameter xmi:id="_1H_1USpSEee14-ResL-nvQ" type="_y6KEwCpSEee14-ResL-nvQ" direction="return">
+            <name xsi:nil="true"/>
+          </ownedParameter>
+          <language>java</language>
+          <body>super();&#xD;
+	</body>
+        </ownedBehavior>
+        <ownedOperation xmi:id="_1Hs6YCpSEee14-ResL-nvQ" name="Super" method="_1H_1UCpSEee14-ResL-nvQ">
+          <eAnnotations xmi:id="_1Hs6YSpSEee14-ResL-nvQ" source="http://www.eclipse.org/uml2/2.0.0/UML">
+            <details xmi:id="_1Hs6YipSEee14-ResL-nvQ" key="create"/>
+          </eAnnotations>
+          <ownedParameter xmi:id="_4ft3sCpVEee14-ResL-nvQ" type="_y6KEwCpSEee14-ResL-nvQ" direction="return"/>
+        </ownedOperation>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Association" xmi:id="_C1jxgCpTEee14-ResL-nvQ" name="" memberEnd="_OwoZMCpPEee14-ResL-nvQ _C1jxgSpTEee14-ResL-nvQ">
+        <ownedEnd xmi:id="_C1jxgSpTEee14-ResL-nvQ" name="" type="_Op8iYCpPEee14-ResL-nvQ" association="_C1jxgCpTEee14-ResL-nvQ"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Class" xmi:id="_LsCYECpVEee14-ResL-nvQ" name="TipoUtilizador">
+        <ownedAttribute xmi:id="_LsMJECpVEee14-ResL-nvQ" name="id" type="_Opjg0CpPEee14-ResL-nvQ" association="_Uy3ZsCpVEee14-ResL-nvQ"/>
+        <ownedAttribute xmi:id="_LsMJESpVEee14-ResL-nvQ" name="id_tipo">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:id="_vC0fcCpVEee14-ResL-nvQ" name="nome_tipo" visibility="public">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </ownedAttribute>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Association" xmi:id="_Uy3ZsCpVEee14-ResL-nvQ" name="" memberEnd="_LsMJECpVEee14-ResL-nvQ _Uy3ZsSpVEee14-ResL-nvQ">
+        <ownedEnd xmi:id="_Uy3ZsSpVEee14-ResL-nvQ" name="" type="_LsCYECpVEee14-ResL-nvQ" association="_Uy3ZsCpVEee14-ResL-nvQ"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Class" xmi:id="_AVKXsCpbEee14-ResL-nvQ" name="GestaoUtilizador">
+        <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_AVdSoSpbEee14-ResL-nvQ" name="main" specification="_AVKXsSpbEee14-ResL-nvQ">
+          <ownedParameter xmi:id="_AVdSoipbEee14-ResL-nvQ" name="args">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_AVdSoypbEee14-ResL-nvQ" value="*"/>
+          </ownedParameter>
+          <language>java</language>
+          <body>// TODO Auto-generated method stub&#xD;
+		addUser();&#xD;
+	</body>
+        </ownedBehavior>
+        <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_AVdSpCpbEee14-ResL-nvQ" name="addUser" specification="_AVThoipbEee14-ResL-nvQ">
+          <language>java</language>
+          <body>Scanner input = new Scanner(System.in);	&#xD;
+		Utilizador newUser = new Utilizador();&#xD;
+		&#xD;
+		System.out.println(&quot;Insira o id&quot;);&#xD;
+		newUser.setId(input.nextInt());&#xD;
+		&#xD;
+		System.out.println(&quot;Insira a password&quot;);&#xD;
+		newUser.setPassword(input.nextLine());&#xD;
+		&#xD;
+		System.out.println(&quot;Insira o nome&quot;);&#xD;
+		newUser.setNome(input.nextLine());&#xD;
+		&#xD;
+		System.out.println(&quot;Insira o email&quot;);&#xD;
+		newUser.setEmail(input.nextLine());&#xD;
+		&#xD;
+		input.close();&#xD;
+	</body>
+        </ownedBehavior>
+        <ownedOperation xmi:id="_AVKXsSpbEee14-ResL-nvQ" name="main" isStatic="true" method="_AVdSoSpbEee14-ResL-nvQ">
+          <ownedParameter xmi:id="_AVThoCpbEee14-ResL-nvQ" name="args">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_AVThoSpbEee14-ResL-nvQ" value="*"/>
+          </ownedParameter>
+        </ownedOperation>
+        <ownedOperation xmi:id="_AVThoipbEee14-ResL-nvQ" name="addUser" isStatic="true" method="_AVdSpCpbEee14-ResL-nvQ"/>
+      </packagedElement>
+    </packagedElement>
+    <profileApplication xmi:id="_N372oCpPEee14-ResL-nvQ">
+      <eAnnotations xmi:id="_N3-58CpPEee14-ResL-nvQ" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="pathmap://UMLLAB_PROFILES/UMLLab.profile.uml#UMLLabProfile-Annotation_2-UMLLabProfile"/>
+      </eAnnotations>
+      <appliedProfile href="pathmap://UMLLAB_PROFILES/UMLLab.profile.uml#UMLLabProfile"/>
+    </profileApplication>
+  </uml:Model>
+  <UMLLabProfile:TargetLanguage xmi:id="_N4poUCpPEee14-ResL-nvQ" base_Package="_MnneQCpPEee14-ResL-nvQ">
+    <languageName>java</languageName>
+  </UMLLabProfile:TargetLanguage>
+  <UMLLabProfile:Reference xmi:id="_OvMOwCpPEee14-ResL-nvQ" base_Element="_Ou-MUCpPEee14-ResL-nvQ"/>
+  <UMLLabProfile:Reference xmi:id="_OvXN4CpPEee14-ResL-nvQ" base_Element="_OvQgMCpPEee14-ResL-nvQ"/>
+  <UMLLabProfile:Reference xmi:id="_Ov0g4CpPEee14-ResL-nvQ" base_Element="_OvnFgCpPEee14-ResL-nvQ"/>
+  <UMLLabProfile:Reference xmi:id="_OxYnICpPEee14-ResL-nvQ" base_Element="_OwyKMCpPEee14-ResL-nvQ"/>
+  <UMLLabProfile:Reference xmi:id="_Oxc4kCpPEee14-ResL-nvQ" base_Element="_OxZOMCpPEee14-ResL-nvQ"/>
+  <UMLLabProfile:Generics xmi:id="_10PBgCpYEee14-ResL-nvQ" genericsValue="UtilizadorProg" base_Element="_10NMUipYEee14-ResL-nvQ"/>
+  <UMLLabProfile:Reference xmi:id="_AVdSoCpbEee14-ResL-nvQ" base_Element="_AVThoypbEee14-ResL-nvQ"/>
+</xmi:XMI>

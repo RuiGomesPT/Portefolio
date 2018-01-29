@@ -1,0 +1,39 @@
+{
+  "name": "webcomunic",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "app.js",
+    "build": "browserify sayHello.js -o bundle.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "bcryptjs": "*",
+    "body-parser": "*",
+    "connect-flash": "*",
+    "cookie-parser": "^1.4.1",
+    "handlebars": "4.0.10",
+    "express": "*",
+    "express-handlebars": "*",
+    "express-messages": "*",
+    "express-session": "*",
+    "express-validator": "*",
+    "passport": "*",
+    "passport-http": "*",
+    "passport-local": "*"
+    
+
+  },
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ESMADIPP/wComunic.git"
+  },
+  "bugs": {
+    "url": "https://github.com/ESMADIPP/wComunic/issues"
+  },
+  "homepage": "https://github.com/ESMADIPP/wComunic#readme",
+  "description": ""
+}

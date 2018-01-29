@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/js-cookie@2/src/js.cookie.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="Styles/style.css">
+    <link rel="stylesheet" type="text/css" href="Styles/dropdown.css">
+    <link rel="stylesheet" type="text/css" href="Styles/snipper.css">
+    <script src="Scripts/dropdown.js"></script>
+    <script src="Scripts/login.js"></script>
+    <script src="Scripts/user.js"></script>
+</head>
+
+<body>
+    <div class="container-fluid">
+        <div class="row" id="biggest">
+            <div class="row">
+                <div class="col-md-6 col-md-offset-3">
+                    <h1 id="TEXT">OH SNIP</h1>
+                    <br>
+                </div>
+                <div class="col-md-3">
+                    <div class="dropdown">
+                        <button id="dpBt" class="dropbtn"></button>
+                        <div id="myDropdown" class="dropdown-content">
+                            <form id="logIn" action="api/users" method="POST">
+                                <div class='form-group'>
+                                    <label for='username' class='sr-onl'>Username</label>
+                                    <input id='username' type='username' required='' placeholder='Username' class='form-control' name='username'>
+                                </div>
+                                <div class='form-group'>
+                                    <label for='password' class='sr-onl'>Password</label>
+                                    <input id='password' type='password' required='' placeholder='Password' class='form-control' name='password'>
+                                </div>
+                                <div class='form-group'>
+                                    <button id="btnLogin" class='btn btn-block'>Login</button>
+                                </div>
+                            </form>
+                            <hr>
+                            <input id="btnRegisto" type="button" class="btn btn-block" value="Sign up">
+                            <br>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="row" id="bigDiv">
+                        <div class="row" id="snippetTitle">
+                            <h1 id="nomePag">User</h1>
+                        </div>
+                        <div class="row" id="snippetInfo">
+                            <div class="col-md-12" id="snipBar">
+                                <div class="row" id="buttonList" style="margin-left:10px;margin-right:10px">
+                                    <div class="btn-group btn-group-lg center-block" role="group" aria-label="...">
+                                        <button type="button" id="dataProfile" class="btn userBtn">Profile</button>
+                                        <button type="button" id="snippetProfile" class="btn userBtn">Snippets</button>
+                                    </div>
+                                </div>
+                                <div class="row" id="snipList" style="margin-left:10px;margin-right:10px">
+                                    <div class="col-md-12">
+                                        <h1 id="nome"></h1>
+                                        <br>
+                                        <h3 id="email"></h3>
+                                        <br>
+                                        <h3 id="descricao"></h3>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+            </div>
+        </div>
+    </div>
+    </div>
+</body>
+
+</html>

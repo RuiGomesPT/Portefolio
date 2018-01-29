@@ -1,0 +1,90 @@
+.dropdown {
+    float: right;
+    margin-right: 60px;
+    border: 1px solid black;
+    position: fixed;
+    top: 0;
+}
+
+.dropbtn {
+    background-color: rgb(255, 81, 0);
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+}
+
+.form-control {
+    width: 250px;
+    margin: 0 auto;
+}
+
+hr {
+    height: 1px;
+    background: rgb(255, 255, 255);
+    background-image: linear-gradient(to right, #ccc, #333, #ccc);
+}
+
+
+.sr-onl {
+    color: black;
+    background-color: rgb(243, 84, 84);
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropbtn:hover,
+.dropbtn:focus {
+    background-color: #992002;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+#btnLogin, #btnRegisto, #btnPerfil, #btnLogout, #btnRegist {
+    width: 250px;
+    margin: 0 auto;
+    color: white;
+    background-color: red;
+    border: 1px dashed black;
+}
+
+
+#btnLogin:hover, #btnRegisto:hover, #btnPerfil:hover, #btnLogout:hover, #btnRegist:hover  {
+    width: 250px;
+    margin: 0 auto;
+    color: white;
+    background-image: linear-gradient(to top, #992915, #000);
+    border: 1px dashed black;
+}
+
+.dropdown-content {
+    border: 1px solid black;
+    right: 0;
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 300px;
+    overflow: auto;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown a:hover {
+    background-color: #f1f1f1
+}
+
+.show {
+    display: block;
+}

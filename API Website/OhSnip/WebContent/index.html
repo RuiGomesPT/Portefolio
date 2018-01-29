@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/js-cookie@2/src/js.cookie.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="Styles/style.css">
+    <link rel="stylesheet" type="text/css" href="Styles/dropdown.css">
+    <link rel="stylesheet" type="text/css" href="Styles/snipper.css">
+    <script src="Scripts/dropdown.js"></script>
+    <script src="Scripts/script.js"></script>
+    <script src="Scripts/login.js"></script>
+</head>
+
+<body>
+    <div class="container-fluid">
+        <div class="row" id="biggest">
+            <div class="row">
+                <div id='dummie' class="col-md-6 col-md-offset-3">
+                    <h1 id="TEXT">OH SNIP</h1>
+                    <br>
+                </div>
+                <div class="col-md-3">
+                    <div class="dropdown">
+                        <button id="dpBt" class="dropbtn"></button>
+                        <div id="myDropdown" class="dropdown-content">
+                            <form id="logIn" action="api/users" method="POST">
+                                <div class='form-group'>
+                                    <label for='username' class='sr-onl'>Username</label>
+                                    <input id='username' type='username' required='' placeholder='Username' class='form-control' name='username'>
+                                </div>
+                                <div class='form-group'>
+                                    <label for='password' class='sr-onl'>Password</label>
+                                    <input id='password' type='password' required='' placeholder='Password' class='form-control' name='password'>
+                                </div>
+                                <div class='form-group'>
+                                    <button id="btnLogin" class='btn btn-block'>Login</button>
+                                </div>
+                            </form>
+                            <hr>
+                            <input id="btnRegisto" type="button" class="btn btn-block" value="Sign up">
+                            <br>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="row" id="bigDiv">
+                        <div class="row" id="searchBar">
+                            <div class="col-md-9 tagSearch">
+                                <h2 class="newOne">Search by Tags</h2>
+                                Search:
+                                <input type="text" id="tagSearch" style="margin-top:10px;margin-left:10px;margin-right:10px"> Language:
+                                <select id="selectLang">
+                                    <option value="All">All</option>
+                                    <option value="Javascript">Javascript</option>
+                                    <option value="Java">Java</option>
+                                    <option value="Python">Python</option>
+                                    <option value="CSharp">C#</option>
+                                    <option value="CPP">C++</option>
+                                    <option value="Others">Others</option>
+                                </select>
+                                <input type="button" id="searchBtn" value="Search">
+                            </div>
+                            <div class="col-md-3 idSearch">
+                                <h2 class="newOne">Search by ID</h2>
+                                Search:
+                                <input type="text" id="idSearch" style="width:200px;margin-top:10px">
+                                <input type="button" id="IDsearchBtn" value="Search">
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-12" id="snipBar">
+                                <div class="row" id="snipList" style="margin-left:10px;margin-right:10px">
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

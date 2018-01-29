@@ -1,0 +1,201 @@
+<link href="https://webitcloud.net/PW/1617/RMR/Model/stylesheets/bootstrap.min.css" rel="stylesheet">
+<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+<link href="https://webitcloud.net/PW/1617/RMR/Model/stylesheets/prettyPhoto.css" rel="stylesheet">
+<link href="https://webitcloud.net/PW/1617/RMR/Model/stylesheets/style.css" rel="stylesheet">
+<link href="https://webitcloud.net/PW/1617/RMR/Model/stylesheets/dark.css" rel="stylesheet">
+<link href="http://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet" type="text/css">
+<link rel="icon" href="https://webitcloud.net/PW/1617/RMR/Views/images/FavIcon.png">
+<link rel="shortcut icon" href="https://webitcloud.net/PW/1617/RMR/Views/images/FavIcon.png">
+<link rel="manifest" href="https://api.myjson.com/bins/16e4s3">
+
+
+<script src="https://webitcloud.net/PW/1617/RMR/Model/jquerybootstrap/jquery-3.2.1.min.js" type="text/javascript"></script>
+<script src='https://webitcloud.net/PW/1617/RMR/Model/jquerybootstrap/jquery.easing.min.js' type='text/javascript'></script>
+<script src='https://webitcloud.net/PW/1617/RMR/Model/jquerybootstrap/jquery.mixitup.min.js' type='text/javascript'></script>
+<script src='https://webitcloud.net/PW/1617/RMR/Model/jquerybootstrap/jquery.nicescroll.min.js' type='text/javascript'></script>
+<script src='https://webitcloud.net/PW/1617/RMR/Model/jquerybootstrap/jquery.prettyPhoto.js' type='text/javascript'></script>
+<script src="https://webitcloud.net/PW/1617/RMR/Model/jquerybootstrap/bootstrap.js" type="text/javascript"></script>
+<script src="https://webitcloud.net/PW/1617/RMR/Model/javascripts/functions.js" type="text/javascript"></script>
+<style>
+  th {
+    border-bottom: 1px solid #ddd;
+  }
+
+  td {
+    padding-top: 10px;
+  }
+
+  #fototd {
+    padding-left: 100px;
+  }
+
+  #foto {
+    padding-right: 250px;
+    padding-left: 100px;
+  }
+
+  input[type=text],
+  input[type=password],
+  input[type=zipcode] {
+    width: 100%;
+    border: none;
+    border-bottom: 2px solid red;
+
+    box-sizing: border-box;
+    -webkit-transition: 0.2s;
+    transition: 0.2s;
+    outline: none;
+  }
+
+  input[type=text]:focus,
+  input[type=password]:focus,
+  input[type=zipcode]:focus {
+    border: 3px solid #959595;
+  }
+
+  p {
+    font-weight: bold;
+  }
+</style>
+<div class="navbar navbar-inverse navbar-fixed-top scrollclass">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" data-toggle="collapse" data-target=".navbar-collapse" class="navbar-toggle"><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button>
+      <a id="homeBtn" href="https://wcomunic.herokuapp.com/#home-sec" class="navbar-brand"><img src="https://webitcloud.net/PW/1617/RMR/Views/images/LogoTlm.png" height="30" width="30" class="img-responsive"></a>
+    </div>
+    <div class="navbar-collapse collapse">
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="https://wcomunic.herokuapp.com/#destaques-sec">Destaques</a></li>
+        <li><a href="https://wcomunic.herokuapp.com/#pacotes-sec">Pacotes</a></li>
+        <li><a href="https://wcomunic.herokuapp.com/#info-sec">Informações</a></li>
+        <li id="refreshPNum" class="dropdown"><a data-toggle="dropdown" class="dropdown-toggle">Entrar<b class="caret"></b></a>
+          <ul style="padding: 15px;min-width: 250px;" class="dropdown-menu">
+            <li>
+              <div class="row">
+                <div class="col-md-12" id="changeUp">
+                </div>
+              </div>
+            </li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+  </div>
+</div>
+<!-- END NAB BAR SECTION-->
+<div id="home-sec">
+  <div class="overlay">
+    <div class="container">
+      <div class="col-md-8 pad-top scrollclass">
+        <h1><strong>
+                <mark>WebComunic</mark>
+                <h2></h2>Connect Yourself</strong></h1>
+        <p>Todos os pacotes do mercado reunidos num só lugar.</p>
+        <p>Descontos eletricamente apelativos.</p>
+        <p>Fácil pesquisa por contéudo, preço ou localidade</p>
+        <p>Satisfação Máxima.</p><a id="pacotesbtn" href="https://wcomunic.herokuapp.com/#pacotes-sec" color="red" background-color="white"
+          class="btn btn-danger btn-lg btn-home">Ver Pacotes<i class="fa fa-toggle-on"></i></a>
+        <p></p>
+        <p></p>
+      </div>
+    </div>
+  </div>
+</div>
+<section id="registo-sec">
+  <div class="container">
+
+    <table>
+      <tr>
+        <th id="tdtitle">
+          <h2 id="foto">Foto de utilizador</h2>
+        </th>
+        <th id="tdutil">
+          <h2>Registo de utilizador</h2>
+        </th>
+      </tr>
+      <tr>
+        <td id="fototd">
+          <form action="myform.cgi">
+            <p><img src="" alt="Fotografia de utilizador" style="width:335px;height:335px;"></p>
+            <label for="fileupload"> Escolha uma foto para submissão</label>
+            <input id="submitFoto" type="file" value="Escolher">
+          </form>
+        </td>
+        <td>
+          <form action="/registar" method="POST">
+            <p>Nome de Utilizador: <input type="text" id="nomeUtilizador" name="nomeUtilizador"></p>
+            <p>Primeiro Nome: <input type="text" id="nome1" name="nome1"></p>
+            <p>Último Nome: <input type="text" id="nome2" name="nome2"></p>
+            <p>Idade: <input type="text" id="idade" name="idade"></p>
+            <p>Sexo: <input type="text" id="sexo" name="sexo"></p>
+            <p>NIF: <input type="text" id="NIF" name="NIF"></p>
+            <p>Morada: <input type="text" id="morada" name="morada"></p>
+            <p>Código - Postal:<input type="zipcode" id="codPostal" pattern="\d{4}-\d{3}" title="Código-Postal" name="codPostal"
+              />
+              <p>E-mail de Utilizador: <input type="text" id="email" name="email"></p>
+              <p>Password: <input type="password" id="passUtilizador" name="passUtilizador"></p><br>
+              <input id="submitRegisto" type="submit" value="Submeter">
+          </form>
+        </td>
+      </tr>
+    </table>
+
+
+  </div>
+</section>
+<section id="info-sec">
+  <div class="container">
+    <div class="row text-center min-set">
+      <div class="col-md-12">
+        <h2>
+          <mark class="head-glow">MAIS </mark> INFORMAÇÕES
+        </h2>
+        <hr class="sub-hr">
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-2 text-center"></div>
+      <div class="col-md-4 text-center">
+        <h3>Sobre a
+          <mark class="head-glow">WebComunic</mark>
+        </h3>
+        <hr class="sub-hr">
+        <form id="disclaimerForm" action="/disclaimer" method='POST' role="form" accept-charset="UTF-8" class="form">
+          <div class="row">
+            <div class="col-md-12 form-group">
+              <button id="botaoDisclaimer" class="btn btn-warning btn-block">Agradecimentos e Disclaimer</button>
+            </div>
+          </div>
+        </form>
+        <form action="http://webitcloud.net/PW/1617/RMR/Externos/Manual-de-Utilizador-WebComunic-Projeto-II.pdf">
+          <div class="row">
+            <div class="col-md-12 form-group">
+              <button id="botaoDoc" class="btn btn-warning btn-block">Manual de Utilizador</button>
+            </div>
+          </div>
+        </form>
+      </div>
+      <div class="col-md-4 text-center">
+        <h3>Mais
+          <mark class="head-glow">Informações</mark>
+        </h3>
+        <hr class="sub-hr">
+        <form id="lojasForm" action="/lojas" method='POST' role="form" accept-charset="UTF-8" class="form">
+          <div class="row">
+            <div class="col-md-12 form-group">
+              <button id="botaoLojas" class="btn btn-warning btn-block">Lojas</button>
+            </div>
+          </div>
+        </form>
+        <form id="contactosForm" action="/contactos" method='POST' role="form" accept-charset="UTF-8" class="form">
+          <div class="row">
+            <div class="col-md-12 form-group">
+              <button id="botaoContactos" class="btn btn-warning btn-block">Contactos</button>
+            </div>
+          </div>
+        </form>
+      </div>
+      <div class="col-md-2 text-center"></div>
+    </div>
+  </div>
+</section>

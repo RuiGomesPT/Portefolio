@@ -1,0 +1,3 @@
+1#rui@gmail.com#123#Rui#Gomes#933256664#ADMIN#A_0#0.0#51321312#Masculino#Portuguesa#Solteiro#15-6-2017#15-6-2017#/profilePics/JorgeJesus.jpg
+2#xd@gmail.com#456#Lobo#Antunes#932315784#CLIENTE#B_5#16.99#423142423#Masculino#Portuguesa#Casado#30-6-2017#-#/profilePics/AntonioLoboAntunes.jpg
+3#Santana@gmail.com#456#Santana#Lopes#43234244#REC#C_#0.0#234234513#Masculino#Portuguesa#Casado#-#-#/profilePics/SantanaLopes.jpg

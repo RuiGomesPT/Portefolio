@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/js-cookie@2/src/js.cookie.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="Styles/style.css">
+    <link rel="stylesheet" type="text/css" href="Styles/dropdown.css">
+    <link rel="stylesheet" type="text/css" href="Styles/snipper.css">
+    <script src="Scripts/register.js"></script>
+</head>
+
+<body>
+    <div class="container-fluid">
+        <div class="row" id="biggest">
+            <div class="row">
+                <div class="col-md-6 col-md-offset-3">
+                    <h1 id="TEXT">OH SNIP</h1>
+                    <br>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <div class="row" id="bigDiv">
+                    <div class="row" id="snippetTitle">
+                        <h1 id="nomePag">Authentication</h1>
+                    </div>
+                    <div class="row" id="snippetInfo">
+                        <div class="col-md-12" id="snipBar">
+                            <div class="row" id="snipList" style="margin-left:10px;margin-right:10px">
+                                <div class="col-md-6">
+                                    <form id="SignUp" action="api/users" method="POST">
+                                        <h1>Sign Up</h1>
+                                        <br>
+                                        <br>
+                                        <div class='row form-group'>
+                                            <div class="col-md-3">
+                                                <label for='registUsername' class='sr-onl'>Username</label>
+                                            </div>
+                                            <div class="col-md-9">
+                                                <input id='registUsername' type='username' required='' placeholder='Username' class='form-control' name='registUsername'>
+                                            </div>
+                                        </div>
+
+                                        <div class='row form-group'>
+                                            <div class="col-md-3">
+                                                <label for='registPassword' class='sr-onl'>Password</label>
+                                            </div>
+                                            <div class="col-md-9">
+                                                <input id='registPassword' type='password' required='' placeholder='Password' class='form-control' name='registPassword'>
+                                            </div>
+                                        </div>
+                                        <div class='row form-group'>
+                                            <div class="col-md-3">
+                                                <label for='registEmail' class='sr-onl'>Email</label>
+                                            </div>
+                                            <div class="col-md-9">
+                                                <input id='registEmail' type='email' required='' placeholder='Email' class='form-control' name='registEmail'>
+                                            </div>
+                                        </div>
+                                        <div class='form-group'>
+                                            <button id="btnRegist" class='btn btn-block'>Sign up</button>
+                                        </div>
+                                    </form>
+                                </div>
+                                <div class="col-md-6">
+                                    <form id="logIn" action="api/users" method="POST">
+                                        <h1>Log In</h1>
+                                        <br>
+                                        <br>
+                                        <div class='row form-group'>
+                                            <div class="col-md-3">
+                                                <label for='username' class='sr-onl'>Username</label>
+                                            </div>
+                                            <div class="col-md-9">
+                                                <input id='username' type='username' required='' placeholder='Username' class='form-control' name='username'>
+                                            </div>
+                                        </div>
+                                        <div class='row form-group'>
+                                            <div class="col-md-3">
+                                                <label for='password' class='sr-onl'>Password</label>
+                                            </div>
+                                            <div class="col-md-9">
+                                                <input id='password' type='password' required='' placeholder='Password' class='form-control' name='password'>
+                                            </div>
+                                        </div>
+
+                                        <div class='form-group'>
+                                            <button id="btnLogin" class='btn btn-block'>Log in</button>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-12">
+        </div>
+    </div>
+    </div>
+    </div>
+</body>
+
+</html>

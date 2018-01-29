@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/js-cookie@2/src/js.cookie.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="Styles/style.css">
+    <link rel="stylesheet" type="text/css" href="Styles/dropdown.css">
+    <link rel="stylesheet" type="text/css" href="Styles/snipper.css">
+    <script src="Scripts/dropdown.js"></script>
+    <script src="Scripts/login.js"></script>
+    <script src="Scripts/newSnippet.js"></script>
+</head>
+
+<body>
+    <div class="container-fluid">
+        <div class="row" id="biggest">
+            <div class="row">
+                <div class="col-md-6 col-md-offset-3">
+                    <h1 id="TEXT">OH SNIP</h1>
+                    <br>
+                </div>
+                <div class="col-md-3">
+                    <div class="dropdown">
+                        <button id="dpBt" class="dropbtn">Log In</button>
+                        <div id="myDropdown" class="dropdown-content">
+                            <form id="logIn" action="api/users" method="POST">
+                                <div class='form-group'>
+                                    <label for='username' class='sr-onl'>Username</label>
+                                    <input id='username' type='username' required='' placeholder='Username' class='form-control' name='username'>
+                                </div>
+                                <div class='form-group'>
+                                    <label for='password' class='sr-onl'>Password</label>
+                                    <input id='password' type='password' required='' placeholder='Password' class='form-control' name='password'>
+                                </div>
+                                <div class='form-group'>
+                                    <button id="btnLogin" class='btn btn-block'>Login</button>
+                                </div>
+                            </form>
+                            <hr>
+                            <input id="btnRegisto" type="button" class="btn btn-block" value="Sign up">
+                            <br>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="row" id="bigDiv">
+                        <div class="row" id="snippetTitle">
+                            <h1 id="nomePag">New Snippet</h1>
+                        </div>
+                        <div class="row" id="snippetInfo">
+                            <div class="col-md-12" id="snipBar">
+                                <div class="row" id="snipList" style="margin-left:10px;margin-right:10px">
+                                    <form id="newSnipForm" action="api/snippets/new" method="POST">
+                                        <div class='form-group'>
+                                            <div class="row">
+                                                <br>
+                                                <div class="col-md-3">
+                                                    <label for='nomeSnippet' class='sr-onl'>Snippet Name</label>
+                                                </div>
+                                                <div class="col-md-9">
+                                                    <input id='nomeSnippet' style='width:1000px;margin-left:10px' required='' placeholder='Snippet Name' class='form-control'
+                                                        name='nomeSnippet'>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class='form-group'>
+                                            <div class="row">
+                                                <div class="col-md-3">
+                                                    <label for='descricaoSnippet' class='sr-onl'>Description</label>
+                                                </div>
+                                                <div class="col-md-9">
+                                                    <textarea id='descricaoSnippet' name="descricaoSnippet" class='form-control' style="height:300px;width:1000px;margin-left:10px"></textarea>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class='form-group'>
+                                            <div class="row">
+                                                <div class="col-md-3">
+                                                    <label for='linguagemSnippet' class='sr-onl'>Language</label>
+                                                </div>
+                                                <div class="col-md-9">
+                                                    <input id='linguagemSnippet' style="margin-left:10px" required='' placeholder='Language' class='form-control' name='linguagemSnippet'>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class='form-group'>
+                                            <div class="row">
+                                                <div class="col-md-3">
+                                                    <label for='conteudoSnippet' class='sr-onl'>Snippet</label>
+                                                </div>
+                                                <div class="col-md-9">
+                                                    <textarea id='conteudoSnippet' name="conteudoSnippet" class='form-control' style="height:500px;width:1000px;margin-left:10px"></textarea>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class='form-group'>
+                                            <div class="row">
+                                                <div class="col-md-3">
+                                                    <label for='tagsSnippet' class='sr-onl'>Tags</label>
+
+                                                </div>
+                                                <div class="col-md-9">
+                                                    <input id='tagsSnippet' style="margin-left:10px;width:600px" required='' placeholder='Tags' class='form-control' name='tagsSnippet'>
+                                                    <b>Split tags using "; "</b>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class='form-group'>
+                                            <button id="addSnippet" style="margin-left:10px;width:600px" class='btn btn-block'>Add Snippet</button>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

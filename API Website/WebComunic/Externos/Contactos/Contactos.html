@@ -1,0 +1,237 @@
+<link href="https://webitcloud.net/PW/1617/RMR/Model/stylesheets/bootstrap.min.css" rel="stylesheet">
+<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+<link href="https://webitcloud.net/PW/1617/RMR/Model/stylesheets/prettyPhoto.css" rel="stylesheet">
+<link href="https://webitcloud.net/PW/1617/RMR/Model/stylesheets/style.css" rel="stylesheet">
+<link href="https://webitcloud.net/PW/1617/RMR/Model/stylesheets/dark.css" rel="stylesheet">
+<link href="http://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet" type="text/css">
+<link rel="icon" href="https://webitcloud.net/PW/1617/RMR/Views/images/FavIcon.png">
+<link rel="shortcut icon" href="https://webitcloud.net/PW/1617/RMR/Views/images/FavIcon.png">
+<link rel="manifest" href="https://webitcloud.net/PW/1617/RMR/Model/manifest/manifest.json">
+
+
+<script src="https://webitcloud.net/PW/1617/RMR/Model/jquerybootstrap/jquery-3.2.1.min.js" type="text/javascript"></script>
+<script src='https://webitcloud.net/PW/1617/RMR/Model/jquerybootstrap/jquery.easing.min.js' type='text/javascript'></script>
+<script src='https://webitcloud.net/PW/1617/RMR/Model/jquerybootstrap/jquery.mixitup.min.js' type='text/javascript'></script>
+<script src='https://webitcloud.net/PW/1617/RMR/Model/jquerybootstrap/jquery.nicescroll.min.js' type='text/javascript'></script>
+<script src='https://webitcloud.net/PW/1617/RMR/Model/jquerybootstrap/jquery.prettyPhoto.js' type='text/javascript'></script>
+<script src="https://webitcloud.net/PW/1617/RMR/Model/jquerybootstrap/bootstrap.js" type="text/javascript"></script>
+<script src="https://webitcloud.net/PW/1617/RMR/Model/javascripts/functions.js" type="text/javascript"></script>
+
+<style>
+    th {
+        border-bottom: 1px solid #ddd;
+        padding-left: 20px;
+        padding-right: 50px;
+    }
+
+    td {
+        padding-top: 10px;
+        padding-bottom: 30px;
+        padding-left: 20px;
+        padding-right: 50px;
+    }
+
+    tr {
+
+        padding-bottom: 30px;
+    }
+
+    #admins {
+        padding-left: 100px;
+    }
+
+    #fototd {
+        padding-left: 40px;
+    }
+
+    #foto {
+        padding-right: 230px;
+        padding-left: 170px;
+    }
+
+    input[type=text],
+    input[type=password],
+    input[type=zipcode] {
+        width: 100%;
+        border: none;
+        border-bottom: 2px solid red;
+
+        box-sizing: border-box;
+        -webkit-transition: 0.2s;
+        transition: 0.2s;
+        outline: none;
+    }
+
+    input[type=text]:focus,
+    input[type=password]:focus,
+    input[type=zipcode]:focus {
+        border: 3px solid #959595;
+    }
+
+    p {
+        font-weight: bold;
+    }
+
+    #tele {
+        padding-right: 50px;
+    }
+</style>
+<div class="navbar navbar-inverse navbar-fixed-top scrollclass">
+    <div class="container">
+        <div class="navbar-header">
+            <button type="button" data-toggle="collapse" data-target=".navbar-collapse" class="navbar-toggle"><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button>
+            <a id="homeBtn" href="#home-sec" class="navbar-brand"><img src="https://webitcloud.net/PW/1617/RMR/Views/images/LogoTlm.png" height="30" width="30" class="img-responsive"></a>
+        </div>
+        <div class="navbar-collapse collapse">
+            <ul class="nav navbar-nav navbar-right">
+                <li><a href="#destaques-sec">Destaques</a></li>
+                <li><a href="#pacotes-sec">Pacotes</a></li>
+                <li><a href="#info-sec">Informações</a></li>
+                <li class="dropdown"><a data-toggle="dropdown" class="dropdown-toggle">Entrar<b class="caret"></b></a>
+                    <ul style="padding: 15px;min-width: 250px;" class="dropdown-menu">
+                        <li>
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <form id="login-nav" role="form" method="post" action="/login" accept-charset="UTF-8" class="form">
+                                        <div class="form-group">
+                                            <label for="username" class="sr-only">Utilizador</label>
+                                            <input id="username" type="username" placeholder="Nome de utilizador" required="" class="form-control" name="username">
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="exampleInputPassword2" class="sr-only">Palavra-Passe</label>
+                                            <input id="password" type="password" placeholder="Meta a palavra-passe" required="" class="form-control" name="password">
+                                        </div>
+                                        <div class="checkbox">
+                                            <label></label>
+                                            <input type="checkbox">Gravar Dados
+                                        </div>
+                                        <div class="form-group">
+                                            <button id="botaoLogin" class="btn btn-danger btn-block">Fazer Login</button>
+                                        </div>
+                                        <div class="form-group">
+                                            <button id="botaoRegisto" class="btn btn-danger btn-block">Fazer Registo</button>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
+<!-- END NAB BAR SECTION-->
+<div id="home-sec">
+    <div class="overlay">
+        <div class="container">
+            <div class="col-md-8 pad-top scrollclass">
+                <h1><strong>
+                <mark>WebComunic</mark>
+                <h2></h2>Connect Yourself</strong></h1>
+                <p>Todos os pacotes do mercado reunidos num só lugar.</p>
+                <p>Descontos eletricamente apelativos.</p>
+                <p>Fácil pesquisa por contéudo, preço ou localidade</p>
+                <p>Satisfação Máxima.</p><a id="pacotesbtn" href="#pacotes-sec" color="red" background-color="white" class="btn btn-danger btn-lg btn-home">Ver Pacotes<i class="fa fa-toggle-on"></i></a>
+                <p></p>
+                <p></p>
+            </div>
+        </div>
+    </div>
+</div>
+<section id="contactos-sec">
+    <div class="container">
+
+        <table>
+            <tr>
+                <th id="tdtitle">
+                    <h2 id="foto">Horário da Administração</h2>
+                </th>
+                <th id="tdutil">
+                    <h2>Contactos da Empresa</h2>
+                </th>
+                <th id="tdutil">
+                    <h2>Contactos da Administração</h2>
+                </th>
+            </tr>
+            <tr>
+                <td id="fototd">
+                    <img src="horario.png" alt="Horário" style="width:500px;height:400px;">
+                </td>
+                <td>
+                    <table>
+                        <tr>
+                            <td id="tele"><img src="telefone.png" alt="Ligue-nos!" style="width:50px;height:50px;"></td>
+                            <td><label>916 578 432</label></td>
+                        </tr>
+                        <tr>
+                            <td id="tele"><img src="mail.png" alt="Contacte-nos!" style="width:50px;height:50px;"></td>
+                            <td><label>webcomunic@gmail.com</label></td>
+                        </tr>
+                    </table>
+                </td>
+                <td>
+                    <table id="admins">
+                        <tr>
+                            <td id="tele"><img src="telefone.png" alt="Ligue-nos!" style="width:50px;height:50px;"></td>
+
+                            <td>
+                                <p><label>Rui R.L.Gomes: 915613344</label></p>
+                                <label>Rui M.P.Gomes: 914875622</label></td>
+                        </tr>
+                        <tr>
+                            <td id="tele"><img src="mail.png" alt="Contacte-nos!" style="width:50px;height:50px;"></td>
+
+                            <td>
+                                <p><label>Rui R.L.Gomes: gomesrui907@gmail.com</label></p>
+                                <label>Rui M.P.Gomes: rui_gomesPT@gmail.com</label></td>
+                        </tr>
+                        <tr>
+                            <td id="tele"><img src="skype.png" alt="Contacte-nos!" style="width:50px;height:50px;"></td>
+
+                            <td>
+                                <p><label>Rui R.L.Gomes: ruilegendary@live.com.pt</label></p>
+                                <label>Rui M.P.Gomes: rui_gomesPT</label></td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+        </table>
+
+
+    </div>
+</section>
+<section id="info-sec">
+    <div class="container">
+        <div class="row text-center min-set">
+            <div class="col-md-12">
+                <h2>
+                    <mark class="head-glow">OUR </mark>LOCATION
+                </h2>
+                <hr class="sub-hr">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-2 text-center"></div>
+            <div class="col-md-4 text-center">
+                <h3>Sobre a
+                    <mark class="head-glow">WebComunic</mark>
+                </h3>
+                <hr class="sub-hr">
+                <h4> <a href="http://www.binarytheme.com/" target="_blank" style="color: #fff; font-size: 12px;">Manual </a></h4>
+                <h4> <a href="http://www.binarytheme.com/" target="_blank" style="color: #fff; font-size: 12px;">Documentação Adicional </a></h4>
+                <h4><a href="http://www.binarytheme.com/" target="_blank" style="color: #fff; font-size: 12px;">Agradecimentos especiais</a></h4>
+            </div>
+            <div class="col-md-4 text-center">
+                <h3>Mais
+                    <mark class="head-glow">Informações</mark>
+                </h3>
+                <hr class="sub-hr">
+                <h4> <a href="http://www.binarytheme.com/" target="_blank" style="color: #fff; font-size: 12px;">Lojas Distribuídas</a></h4>
+                <h4> <a href="http://www.binarytheme.com/" target="_blank" style="color: #fff; font-size: 12px;">Contactos</a></h4>
+                <h4><a href="http://www.binarytheme.com/" target="_blank" style="color: #fff; font-size: 12px;">Sugestões</a></h4>
+            </div>
+            <div class="col-md-2 text-center"></div>
+        </div>
+    </div>
+</section>

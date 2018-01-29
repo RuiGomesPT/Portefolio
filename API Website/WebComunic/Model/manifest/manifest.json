@@ -1,0 +1,26 @@
+{
+	"name": "WebComunic",
+	"short_name": "WebCom",
+	"start_url": "http://wcomunick.webitcloud.net/",
+	"display": "standalone",
+	"background_color": "#3E4EB8",
+	"theme_color": "#2F3BA2",
+	"description": "",
+	"orientation": "landscape",
+	"icons": [{
+			"src": "https://webitcloud.net/PW/1617/RMR/Views/images/LogoTlm.png",
+			"sizes": "192x192",
+			"type": "image/png"
+		},
+		{
+			"src": "https://webitcloud.net/PW/1617/RMR/Views/images/LogoTbl.png",
+			"sizes": "512x512",
+			"type": "image/png"
+		}
+	],
+	"prefer_related_applications": false,
+	"related_applications": [{
+		"platform": "web",
+		"url": "https://wcomunic.webitcloud.net"
+	}]
+}

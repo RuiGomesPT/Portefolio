@@ -1,0 +1,3 @@
+A#Hotel Boa Ventura#O melhor hotel do mundo#10#10#/hotelImages/HotelBoaVentura.jpg#TV, BAR, POOL, GYM
+B#Hotel da Alta#O segundo melhor hotel do mundo#5#8#/hotelImages/Hotel da Alta.jpg#TV, GYM, MASS
+C#Hotel de Santa Clara#O terceiro melhor hotel do mundo#12#12#/hotelImages/Hotel Santa Clara.jpg#BAR

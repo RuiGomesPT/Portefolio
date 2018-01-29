@@ -1,0 +1,107 @@
+$(document).ready(function () {
+    $(function () {
+        $.ajax({
+            type: 'POST',
+            url: 'http://localhost:3000/getPacotes',
+            success: function (data) {
+                for (var i = 0; i < data.length; i++) {
+
+                    var idPacote = data[i].idPacotes;
+                    var nomePacote = data[i].Nome_Pacote;
+                    var precoPacote = data[i].Preco_Pacote;
+                    var fornecedorPacote = data[i].Fornecedor_Pacote;
+                    var internet = data[i].Internet;
+                    var netMovel = data[i].Internet_Telemovel;
+                    var telemovel = data[i].Telefone;
+                    var televisao = data[i].Televisao;
+                    var extras = data[i].extras;
+                    var destaques = data[i].destaques;
+                    var foto = "https://webitcloud.net/PW/1617/RMR/Views/images/Pacotes/" + data[i].Foto;
+                    var pacoteSet1 = "<div class='col-md-4 pacotes'>";
+                    var dynaButton = "<input class='produto' id=" + idPacote + " type='button' name='comprar' value='Comprar Pacote'>";
+                    var pacoteSet2 = "<img src=" + foto + " alt='Mountain View' style='width:150px;height:150px;'><br>";
+                    var pacoteSet3 = "</div>";
+                    $("#pacotes").append(pacoteSet1 + "<h1>" + idPacote + "</h1>" + "<h1>" + nomePacote + "</h1>" + "<h3>" + fornecedorPacote + "</h3>" + "<h3>" + precoPacote + "euros/mes </h3>" + "<h5>" + internet + "</h5>" + "<h5>" + telemovel + "</h5>" + pacoteSet2 + pacoteSet3);
+                    // $(document).find("#" + i).attr({
+                    //     "id": idPacote
+                    // });
+                }
+            }
+        });
+    });
+
+    $("#homeBtn").click(function () {
+        console.log(sessionStorage.getItem('status'));
+    });
+
+    $("#botaoLogin").click(function () {
+        var username = $("#username").val();
+        var password = $("#password").val();
+        debugger;
+        $.ajax({
+            type: 'POST',
+            url: "http://localhost:3000/logIn",
+            data: {
+                username: username,
+                password: password
+            },
+            success: function (data) {
+                jQuery(window).load(function () {
+                    sessionStorage.setItem('status', 'loggedIn')
+                });
+            }
+        });
+    });
+
+    // $("#pacotesBtn").click(function () {
+    //     $.post("/maisPacotes");
+    //     $(function () {
+    //         $.ajax({
+    //             type: 'POST',
+    //             url: '/getPacotes',
+    //             success: function (data) {
+    //                 for (var i = 0; i < data.length; i++) {
+
+    //                     var idPacote = data[i].idPacote;
+    //                     var nomePacote = data[i].Nome_Pacote;
+    //                     var precoPacote = data[i].Preco_Pacote;
+    //                     var fornecedorPacote = data[i].Fornecedor_Pacote;
+    //                     var internet = data[i].Internet;
+    //                     var netMovel = data[i].Internet_Telemovel;
+    //                     var telemovel = data[i].Telefone;
+    //                     var televisao = data[i].Televisao;
+    //                     var extras = data[i].extras;
+    //                     var destaques = data[i].destaques;
+    //                     var foto = "https://webitcloud.net/PW/1617/RMR/Views/images/Pacotes/" + data[i].Foto;
+    //                     var pacoteSet1 = "<div class='col-md-4 pacotes'>";
+    //                     var pacoteSet2 = "<img src=" + foto + " alt='Mountain View' style='width:150px;height:150px;'><br><br><input type='button' class='produto' id=" + idPacote + "' name='comprar' value='Comprar Pacote'>";
+    //                     var pacoteSet3 = "</div>";
+    //                     $("#pacotes").append(pacoteSet1 + "<h1>" + nomePacote + "</h1>" + "<h2>" + fornecedorPacote + "</h2>" + "<h3>" + precoPacote + "euros/mes </h3>" + pacoteSet2 + pacoteSet3);
+    //                     $(document).find("#btnPac" + i).attr({
+    //                         "idPacote": idPacote
+    //                     });
+    //                 }
+    //             }
+    //         });
+    //     });
+    // });
+
+    $("#botaoRegisto").click(function () {
+        $.post("http://localhost:3000/registo");
+    });
+
+
+    $("#pacotes").on('click', ".produto", function () {
+        var prod = this.id;
+        console.log(prod);
+        $.get("http://localhost:3000/pacote?idPacote=" + prod);
+    });
+    // for (i = 0; i < 1000; i++) {
+    //     console.log("gato");
+    //     $("#pacotes").on("click", "#btnPac" + i, function () {
+    //         console.log("cao");
+    //         $.post("http://localhost:3000/pacote" + this.idPacote);
+    //     });
+    // }
+
+});

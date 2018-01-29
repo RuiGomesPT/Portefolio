@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <link href='https://fonts.googleapis.com/css?family=Raleway:400,200' rel='stylesheet' type='text/css'>
+    <link type="text/css" rel="stylesheet" href="path-to-fontawesome/font-awesome.css">
+    <link rel="stylesheet" href="./style.css">
+    <script src="./Menu.js"></script>
+    <title>Robo Paw - Projeto SG</title>
+</head>
+
+<body background="./materials/images/tech.jpg" height='100%'>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-10">
+                <a href="https://www.ipp.pt/" target="_blank">
+                <img src="./materials/images/logo-ipp.png" id="ipp" alt="logótipo Politecnico do Porto" style="width:100px;height:70px;">
+                </a>
+                <br>
+                <br>
+                <div class="sticky-container">
+                    <ul class="sticky">
+                        <li>
+                            <img src="./materials/images/facebook.png" width="32" height="32">
+                            <p><a href="https://www.facebook.com/Robo-Paw-1400765076675262" target="_blank">Siga-nos no  <br>Facebook</a></p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-md-2">
+                <button id="btnMute" style="float: right;"> ♫ </button>
+            </div>
+
+            <div class="col-md-12">
+                <h3 class="text-center">
+                    <img style="border:3px solid black" id="logo " src="./materials/images/logotipo.png" border="3" />
+                </h3>
+                <br>
+                <br>
+                <br>
+                <div id="menubotoes" class="container">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <button id="btnNewGame" type="button" class="btn btn-block btn-lg btn-primary">
+						Novo Jogo
+					</button>
+                            <br>
+                            <button type="button" class="btn btn-block btn-lg btn-success" onclick="document.getElementById('configpopup').style.display='block'">
+						Configurações
+					</button>
+                            <div id="configpopup" class="w3-modal">
+                                <div class="w3-modal-content w3-card-4 w3-animate-zoom">
+                                    <header class="w3-container w3-green">
+                                        <span onclick="document.getElementById('configpopup').style.display='none'" class="w3-button w3-green w3-xlarge w3-display-topright">&times;</span>
+                                        <h2>Configurações</h2>
+                                    </header>
+                                    <div>
+                                        <h1>Configurações do Jogo</h1>
+                                        <br>
+                                        <p> Nivel: <select name="level" id="level">
+                                            <option value="easy"> Fácil </option>
+                                            <option value="medium"> Normal </option>
+                                            <option value="hard"> Díficil </option>
+                                            <option value="extreme"> Extremo </option>
+                                        </select></p>
+                                        <br>
+                                        <p> Cor do Gato: <select name="color" id="color">
+                                            <option value="mecha"> Mecha </option>
+                                            <option value="jungle"> Jungle </option>
+                                            <option value="magma"> Magma </option>
+                                            <option value="crystal"> Crystal </option>
+                                            <option value="dio"> Dio </option>
+                                        </select></p>
+                                        <br>
+                                        <p> Música: <select name="music" id="music">
+                                            <option value="reachout"> Reach out to the Truth </option>
+                                            <option value="dejavu"> Deja Vu </option>
+                                            <option value="sonic"> Gotta go fast </option>
+                                            <option value="rivers"> Rivers in the Desert </option>
+                                            <option value="lightthefire"> Light the Fire up in the Night </option>
+                                        </select></p>
+                                        <br>
+
+
+                                    </div>
+
+                                </div>
+                            </div>
+                            <br>
+                            <button type="button" onclick="document.getElementById('modalpopup').style.display='block'" class="btn btn-block btn-lg btn-warning">
+						Acerca de...
+					</button>
+                            <div id="modalpopup" class="w3-modal">
+                                <div class="w3-modal-content w3-card-4 w3-animate-zoom">
+                                    <header class="w3-container w3-orange">
+                                        <span onclick="document.getElementById('modalpopup').style.display='none'" class="w3-button w3-orange w3-xlarge w3-display-topright">&times;</span>
+                                        <h2>Acerca...</h2>
+                                    </header>
+
+                                    <div class="w3-bar w3-border-bottom">
+                                        <button class="tablink w3-bar-item w3-button" onclick="abrirModal(event, 'Projeto')">...do Projeto</button>
+                                        <button class="tablink w3-bar-item w3-button" onclick="abrirModal(event, 'Grupo')">...de quem o desenvolveu</button>
+                                        <button class="tablink w3-bar-item w3-button" onclick="abrirModal(event, 'Disciplina')">...da disciplina</button>
+                                    </div>
+
+                                    <div id="Projeto" class="w3-container city">
+                                        <h1>Projeto</h1>
+                                        <br>
+                                        <p>> Este projeto é utilizado para fins de avaliação.</p>
+                                        <p>> Este projeto não se destina a fins comerciais.</p>
+                                        <p>> Avaliado no âmbito da disciplina de Sistemas Gráficos</p>
+                                        <p>> Disclaimer: Todo o trabalho sonoro utilizado na totalidade deste projeto pertence
+                                            a terceiros, não tendo sido criados pelo Grupo de trabalho.</p>
+                                    </div>
+
+                                    <div id="Grupo" class="w3-container city">
+                                        <h1>Grupo de Trabalho</h1>
+                                        <br>
+                                        <p>> Rui Manuel Pereira Gomes, nº 9140518</p>
+                                        <p>> Rui Ricardo Lopes Gomes, nº 9150326</p>
+                                    </div>
+
+                                    <div id="Disciplina" class="w3-container city">
+                                        <h1>Disciplina</h1>
+                                        <br>
+                                        <p>Disciplina: Sistemas Gráficos</p><br>
+                                        <p>> Docente da Disciplina:Dr.ª Eng.ª Teresa Terroso</p>
+                                        <p>> Ano Letivo da Disciplina:2º Ano de Curso</p>
+                                        <p>> Curso da Disciplina: Tecnologias e Sistemas de Informação para a Web</p>
+                                        <p>> Escola de Leccionamento da Disciplina: Escola Superior de media Artes e Design</p>
+                                        <p>> Instituto de Leccionamento da Disciplina: Instituto Politécnico do Porto</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <br>
+                <br>
+                <div id="definicoes" class="container">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <dl>
+                                <dt>
+                                    Objetivo do Jogo
+                                </dt>
+                                <dd>
+                                    Chegar ao fim do caminho sem perder todas as vidas, e com a máxima pontuação final que o jogador conseguir obter.
+                                </dd>
+                            </dl>
+                        </div>
+                        <div class="col-md-6">
+                            <img id="imagem" alt="Cenário de Jogo" height="150" width="300" src="./materials/images/Ecra_de_Jogo.png" />
+                            <div id="modal" class="modal">
+                                <span class="close">Fechar</span>
+                                <img class="modal-content" id="img01">
+                                <div id="caption"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <br>
+                    <br>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <dl>
+                                <dt>
+                                    Diamantes Azuis
+                                </dt>
+                                <dd>
+                                    Os diamantes azuis dão pontos. Quantas mais o jogador apanhar, maior a sua pontuação no final do jogo.
+                                </dd>
+                            </dl>
+                        </div>
+                        <div class="col-md-6">
+                            <img id="imagem2" alt="Item dador pe pontos" height="130" width="150" src="./materials/images/Diamond.png" />
+                        </div>
+                    </div>
+                    <br>
+                    <br>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <dl>
+                                <dt>
+                                    Bola-Relâmpago
+                                </dt>
+                                <dd>
+                                    A bola-relâmpago dá um "God Mode" temporário, que torna o jogador imune a qualquer tipo de dano dos Enemies.
+                                </dd>
+                            </dl>
+                        </div>
+                        <div class="col-md-6">
+                            <img id="imagem3" alt="PowerUp para God Mode" height="150" width="150" src="./materials/images/PowerUp.png" />
+                        </div>
+                    </div>
+                    <br>
+                    <br>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <dl>
+                                <dt>
+                                    Redface
+                                </dt>
+                                <dd>
+                                    Os Redfaces são de se evitar, fazendo o jogador perder uma vida de cada vez que toque num deles.
+                                </dd>
+                            </dl>
+                        </div>
+                        <div class="col-md-6">
+                            <img id="imagem4" alt="Bola furiosa tiradora de vidas" height="150" width="150" src="./materials/images/Enemy.png" />
+                        </div>
+                    </div>
+                    <br>
+                    <br>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <dl>
+                                <dt>
+                                    Controlos
+                                </dt>
+                                <dd>
+                                    <p>Os controlos são os seguintes:</p>
+                                    <p>A - Mover para a Esquerda</p>
+                                    <p>D - Mover para a Direita</p>
+                                    <p>P - Pausa ou Resumo</p>
+                                    <p>C - Alterar prespetiva</p>
+                                    <p>R - Recomeçar(em pausa)</p>
+                                    <p>M - Voltar ao Menu(em pausa)</p>  
+                              </dd>
+                            </dl>
+                        </div>
+                        <div class="col-md-6">
+                            <img id="imagem5" alt="Controlos in-game" height="300" width="550" src="./materials/images/keyboard.png" />
+                        </div>
+                    </div>
+                </div>
+                <br>
+                <br>
+                <br>
+
+
+            </div>
+        </div>
+    </div>
+    <script>
+        // Get the modal
+        var modal = document.getElementById('modal');
+
+        // Get the image and insert it inside the modal - use its "alt" text as a caption
+        var img = document.getElementById('imagem');
+        var img2 = document.getElementById('imagem2');
+        var img3 = document.getElementById('imagem3');
+        var img4 = document.getElementById('imagem4');
+        var img5 = document.getElementById('imagem5');
+        var modalImg = document.getElementById("img01");
+        var captionText = document.getElementById("caption");
+        img.onclick = function () {
+            modal.style.display = "block";
+            modalImg.src = this.src;
+            captionText.innerHTML = this.alt;
+        }
+        img2.onclick = function () {
+            modal.style.display = "block";
+            modalImg.src = this.src;
+            captionText.innerHTML = this.alt;
+        }
+        img3.onclick = function () {
+            modal.style.display = "block";
+            modalImg.src = this.src;
+            captionText.innerHTML = this.alt;
+        }
+        img4.onclick = function () {
+            modal.style.display = "block";
+            modalImg.src = this.src;
+            captionText.innerHTML = this.alt;
+        }
+        img5.onclick = function () {
+            modal.style.display = "block";
+            modalImg.src = this.src;
+            captionText.innerHTML = this.alt;
+        }
+        // Get the <span> element that closes the modal
+        var span = document.getElementsByClassName("close")[0];
+
+        // When the user clicks on <span> (x), close the modal
+        span.onclick = function () {
+            modal.style.display = "none";
+        }
+
+        document.getElementsByClassName("tablink")[0].click();
+
+        function abrirModal(evt, acercade) {
+            var i, x, tablinks;
+            x = document.getElementsByClassName("city");
+            for (i = 0; i < x.length; i++) {
+                x[i].style.display = "none";
+            }
+            tablinks = document.getElementsByClassName("tablink");
+            for (i = 0; i < x.length; i++) {
+                tablinks[i].classList.remove("w3-light-grey");
+            }
+            document.getElementById(acercade).style.display = "block";
+            evt.currentTarget.classList.add("w3-light-grey");
+        }
+    </script>
+</body>
+
+</html>
